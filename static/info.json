@@ -1,0 +1,133 @@
+[
+  {
+    "album": "Dangerously In Love",
+    "artist": "Beyoncé",
+    "released": "June 24, 2003",
+    "recorded": "March 2002-March 2003",
+    "genre": "R&B / Soul",
+    "label": "Colombia Records",
+    "overview": "<em>Dangerously in Love </em> is Beyoncé's debut studio album. This album marked a shift in her career, as she began to move away from Destiny's Child and establish herself as a solo artist. Beyoncé also worked to establish herself as more than just as singer on this album, as she is credited as a co-writer, co-producer, and executive producer. This album contains a variety of mid-tempo and ballad songs that fit into the R&B and soul genre. Though Beyoncé had a hard time gaining support from record executives for this album, it became a huge success, commercially and critically. This is the album that set Beyoncé on the path to becoming the dominating force in the music industry that she is today.",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/84/Dangerously_In_Love_Album%282003%29.png",
+    "singles": {
+      "single1":"Crazy in Love",
+      "single2":"Baby Boy",
+      "single3":"Me, Myself and I",
+      "single4":"Naughty Girl"
+    },
+    "extras": [
+      "<em>Dangerously in Love</em> debuted as number one on the US Billdobard 200 chart",
+      "As of June 2016, <em>Dangerously In Love </em> is Beyoncé's best selling album. ",
+      "<em>At the 46th Annual Grammy Awards in 2004, Beyoncé won 5 awards for  Dangerously in Love. She won Best Female R&B Vocal Performance, Best R&B Vocal Performance by a Duo or a Group with Vocals, Best R&B Song, Best Contemporary R&B Album, and Best Rap/Sung Collaboration. </em>",
+      "<em>Dangerously in Love</em> is 4x Platinum certified in the United States, and has sold over 5,000,000 units in the United States alone."
+    ],
+  },
+  {
+    "album": "B'Day",
+    "artist": "Beyoncé",
+    "released": "September 4, 2006",
+    "recorded": "April 2006",
+    "genre": "R&B",
+    "label": "Colombia Records & Sony Urban",
+    "overview": "",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/c4/Beyonc%C3%A9_-_B%27Day.png",
+    "singles": {
+      "single1":"Déjà Vu",
+      "single2":"Ring the Alarm",
+      "single3":"Irreplaceable",
+      "single4":"Beautiful Liar",
+      "single5": "Get Me Bodied",
+      "single6": "Green Light"
+    },
+    "extras": [
+
+    ],
+  },
+  {
+  "album": "I Am Sasha Fierce",
+  "artist": "Beyoncé",
+  "released": "November 18, 2008",
+  "recorded": "December 2007-August 2008",
+  "genre": "Pop / R&B",
+  "label": "Sony Music World & Columbia Records",
+  "overview": "",
+  "singles": {
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/96/I_Am..._Sasha_Fierce.png",
+    "single1":"If I Were a Boy",
+    "single2":"Single Ladies (Put a Ring on It)",
+    "single3":"Diva",
+    "single4":"Halo",
+    "single5": "Ego",
+    "single6": "Sweet Dreams",
+    "single7": "Broken-Hearted Girl",
+    "single8": "Video Phone",
+    "single9":"Why Don't You Love Me"
+  },
+  "extras": [
+
+  ],
+},
+  {
+  "album": "4",
+  "artist": "Beyoncé",
+  "released": "June 28, 2011",
+  "recorded": "2010-2011",
+  "genre": "R&B",
+  "label": "Parkwood Entertainment & Columbia Records",
+  "overview": "https://upload.wikimedia.org/wikipedia/en/c/ca/Beyonc%C3%A9_-_4.png",
+  "cover": "",
+  "singles": {
+    "single1":"Run the World (Girls)",
+    "single2":"Best Thing I Never Had",
+    "single3":"Party",
+    "single4":"Love On Top",
+    "single5": "Countdown",
+    "single6:": "End of Time"
+  },
+  "extras": [
+
+  ],
+},
+  {
+  "album": "Beyoncé",
+  "artist": "Beyoncé",
+  "released": "December 13, 2013",
+  "recorded": "2012-13",
+  "genre": "Electro R&B",
+  "label": "Parkwood Entertainment & Columbia Records",
+  "overview": "",
+  "cover": "https://upload.wikimedia.org/wikipedia/commons/2/21/Beyonc%C3%A9_-_Beyonc%C3%A9.svg",
+  "singles": {
+    "single1":"XO",
+    "single2":"Drunk in Love",
+    "single3":"Partition",
+    "single4":"Pretty Hurts",
+    "single5":"Flawless (Remix)",
+    "single6": "7/11",
+    "single7": "Ring Off"
+  },
+  "extras": [
+
+  ],
+},
+  {
+  "album": "Lemonade",
+  "artist": "Beyoncé",
+  "released": "April 23, 2016",
+  "recorded": "2014-2015",
+  "genre": "R&B",
+  "label": "Parkwood Entertainment & Columbia Records",
+  "overview": "",
+  "cover": "https://upload.wikimedia.org/wikipedia/en/5/53/Beyonce_-_Lemonade_%28Official_Album_Cover%29.png",
+  "singles": {
+    "single1":"Formation",
+    "single2":"Sorry",
+    "single3":"Hold Up",
+    "single4":"Freedom",
+    "single5":"All Night"
+  },
+  "extras": [
+
+  ],
+  }
+
+]
