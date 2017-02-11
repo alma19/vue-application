@@ -19,12 +19,12 @@
 
 
   <ul class="slider-nav">
-    <li @click="currentTab = 1">Tab 1</li>
-    <li @click="currentTab = 2">Tab 2</li>
-    <li @click="currentTab = 3">Tab 3</li>
-    <li @click="currentTab = 4">Tab 4</li>
-    <li @click="currentTab = 5">Tab 5</li>
-    <li @click="currentTab = 6">Tab 6</li>
+    <li @click="currentTab = 1">Dangerously in Love</li>
+    <li @click="currentTab = 2">B'Day</li>
+    <li @click="currentTab = 3">I Am Sasha Fierce</li>
+    <li @click="currentTab = 4">4</li>
+    <li @click="currentTab = 5">Beyoncé</li>
+    <li @click="currentTab = 6">Lemonade</li>
   </ul>
   </div>
 </template>
