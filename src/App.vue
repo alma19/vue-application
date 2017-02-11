@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <Slider></Slider>
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import Slider from './components/Slider'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello,
+    Slider
   }
 }
 </script>
 
 <style>
+body {
+  background-color: black; 
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
