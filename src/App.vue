@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="title">BEYONCÉ</div>
-    <p>info here</p>
+    <p id="title">info here</p>
     <div class="container covers">
 
     <img src="./assets/dangerously.png" class="cover col-lg-4" id="dangerously" @click="dangerouslyModal=true">
@@ -22,7 +22,8 @@
 
     <!--I used the Bulma framework and this youtube tutorial (https://www.youtube.com/watch?v=Ebk2W3CA-UI) to make modals!!-->
     <Modal v-show="dangerouslyModal" @close="dangerouslyModal=false">
-      <h1 style="color:black">{{ message }}</h1>
+       <Intro :albums="albums"></Intro>
+
     </Modal>
 
     <Modal v-show="bdayModal" @close="bdayModal=false">
@@ -43,16 +44,12 @@
 
 <script>
 import axios from 'axios'
-import Hello from './components/Hello'
-import Slider from './components/Slider'
 import Intro from './components/Intro'
 import Modal from './components/Modal'
 
 export default {
   name: 'app',
   components: {
-    Hello,
-    Slider,
     Intro,
     Modal
   },
@@ -64,7 +61,7 @@ export default {
       bdayModal: false,
       sashaFierceModal: false,
       showModal: false,
-      message: 'Hello'
+      message: 'Hi'
     }
   },
 
@@ -75,8 +72,8 @@ export default {
   mounted () {
     axios.get('/static/info.json')
     .then((response) => {
-      console.log(response.data)
       this.albums = response.data
+      console.log(this.albums[0].albumName)
     })
   }
 
@@ -92,12 +89,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: white;
+  color: black;
   padding-top: 60px;
 }
 
-  .title {
+  .title, #title {
     color: white;
+  }
+
+  .title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 6em;
+    font-weight: bold;
+    color: #D8AEC8;
   }
 
 .cover {
@@ -112,9 +116,14 @@ body {
 
 .app-footer {
   margin: 20px;
+  color: white;
 }
 
 a {
-  color: #23527c;
+  color: #D8AEC8;
+}
+
+a:hover {
+  color: white;
 }
 </style>

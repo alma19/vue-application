@@ -1,15 +1,17 @@
 <template>
-  <div class="Intro">
-    <h3>{{album.albumName }}</h3>
-    <p>{{album.singles.single1}}</p>
-    <p>{{album.released}}</p>
-  </div>
+  <div>
+    <div :albums="albums" class="Intro">
+      <h3>{{ this.albums[0].albumName }}</h3>
+      <h1>hello</h1>
+    </div>
+</div>
 </template>
 
 <script>
+
 export default {
   props: [
-    'album'
+    'albums'
   ]
 }
 </script>
