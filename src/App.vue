@@ -1,23 +1,43 @@
 <template>
   <div id="app">
-    <h1>BEYONCE</h1>
+    <div class="title">BEYONCÉ</div>
     <p>info here</p>
-    <div class="covers">
+    <div class="container covers">
 
-    <img src="./assets/dangerously.png" class="cover col-lg-4" id="dangerously" @click="openModal">
+    <img src="./assets/dangerously.png" class="cover col-lg-4" id="dangerously" @click="dangerouslyModal=true">
 
-    <img src="./assets/bday.png" class=" cover col-lg-4">
+    <img src="./assets/bday.png" class="cover col-lg-4" @click="bdayModal=true">
 
-    <img src="./assets/sashafierce.png" class="cover col-lg-4">
+    <img src="./assets/sashafierce.png" class="cover col-lg-4" @click="sashaFierceModal=true">
 
-    <img src="./assets/4.png" class="cover col-lg-4">
+    <img src="./assets/4.png" class="cover col-lg-4" @click="showModal=true">
 
-    <img src="./assets/beyonce.png" class="cover col-lg-4">
+    <img src="./assets/beyonce.png" class="cover col-lg-4" @click="showModal=true">
 
-    <img src="./assets/lemonade.png" class="cover col-lg-4">
-  </div>
+    <img src="./assets/lemonade.png" class="cover col-lg-4" @click="showModal=true">
 
-  </div>
+    <div class="app-footer"><a href="http://almawashington.com" target="_blank">Alma Washington.</a> 2017. Beyoncé album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>
+
+    </div> <!--COVERS-->
+
+    <!--I used the Bulma framework and this youtube tutorial (https://www.youtube.com/watch?v=Ebk2W3CA-UI) to make modals!!-->
+    <Modal v-show="dangerouslyModal" @close="dangerouslyModal=false">
+      <h1 style="color:black">{{ message }}</h1>
+    </Modal>
+
+    <Modal v-show="bdayModal" @close="bdayModal=false">
+      <h1 style="color:black">{{ message }}</h1>
+    </Modal>
+
+    <Modal v-show="sashaFierceModal" @close="sashaFierceModal=false">
+      <h1 style="color:black">{{ message }}</h1>
+    </Modal>
+
+    <Modal v-show="showModal" @close="showModal=false">
+      <h1 style="color:black">{{ message }}</h1>
+    </Modal>
+
+</div><!--APP-->
 
 </template>
 
@@ -26,7 +46,7 @@ import axios from 'axios'
 import Hello from './components/Hello'
 import Slider from './components/Slider'
 import Intro from './components/Intro'
-import BeyAlbums from './components/BeyAlbums'
+import Modal from './components/Modal'
 
 export default {
   name: 'app',
@@ -34,19 +54,21 @@ export default {
     Hello,
     Slider,
     Intro,
-    BeyAlbums
+    Modal
   },
 
   data () {
     return {
-      albums: []
+      albums: [],
+      dangerouslyModal: false,
+      bdayModal: false,
+      sashaFierceModal: false,
+      showModal: false,
+      message: 'Hello'
     }
   },
 
   methods: {
-    openModal () {
-      console.log('Open')
-    }
 
   },
 
@@ -70,12 +92,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  padding-top: 60px;
 }
 
+  .title {
+    color: white;
+  }
+
 .cover {
-  padding: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -83,38 +110,11 @@ body {
   opacity: 0.7;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: white;
+.app-footer {
+  margin: 20px;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+a {
+  color: #23527c;
 }
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 </style>
