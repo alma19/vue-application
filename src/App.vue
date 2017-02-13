@@ -4,6 +4,9 @@
     <p id="title">info here</p>
     <div class="container covers">
 
+    <!--Album covers / @click makes modal box pop up -->
+    <!--I used the Bulma framework and this youtube tutorial (https://www.youtube.com/watch?v=Ebk2W3CA-UI) to make modals!!-->
+
     <img src="./assets/dangerously.png" class="cover col-lg-4" id="dangerously" @click="dangerouslyModal=true">
 
     <img src="./assets/bday.png" class="cover col-lg-4" @click="bdayModal=true">
@@ -20,7 +23,7 @@
 
     </div> <!--COVERS-->
 
-    <!--I used the Bulma framework and this youtube tutorial (https://www.youtube.com/watch?v=Ebk2W3CA-UI) to make modals!!-->
+
     <Modal v-show="dangerouslyModal" @close="dangerouslyModal=false">
        <Intro :albums="albums"></Intro>
 
@@ -38,6 +41,8 @@
       <h1 style="color:black">{{ message }}</h1>
     </Modal>
 
+    <MusicPlayer></MusicPlayer>
+
 </div><!--APP-->
 
 </template>
@@ -46,12 +51,14 @@
 import axios from 'axios'
 import Intro from './components/Intro'
 import Modal from './components/Modal'
+import MusicPlayer from './components/MusicPlayer'
 
 export default {
   name: 'app',
   components: {
     Intro,
-    Modal
+    Modal,
+    MusicPlayer
   },
 
   data () {
@@ -61,7 +68,7 @@ export default {
       bdayModal: false,
       sashaFierceModal: false,
       showModal: false,
-      message: 'Hi'
+      message: 'Bey Album'
     }
   },
 
@@ -74,6 +81,7 @@ export default {
     .then((response) => {
       this.albums = response.data
       console.log(this.albums[0].albumName)
+      console.log(this.albums[0].link.href)
     })
   }
 

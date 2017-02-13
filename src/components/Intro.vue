@@ -1,18 +1,23 @@
 <template>
   <div>
     <div :albums="albums" class="Intro">
-      <h3>{{ this.albums[0].albumName }}</h3>
-      <h1>hello</h1>
+       <h3>Intro Test</h3>
     </div>
+    <MusicPlayer></MusicPlayer>
 </div>
 </template>
 
 <script>
 
+import MusicPlayer from './MusicPlayer'
+
 export default {
   props: [
     'albums'
-  ]
+  ],
+  components: {
+    MusicPlayer
+  }
 }
 </script>
 
