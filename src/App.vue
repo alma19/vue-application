@@ -2,46 +2,7 @@
   <div id="app">
     <div class="title">BEYONCÉ</div>
     <p id="title">info here</p>
-    <div class="container covers">
-
-    <!--Album covers / @click makes modal box pop up -->
-    <!--I used the Bulma framework and this youtube tutorial (https://www.youtube.com/watch?v=Ebk2W3CA-UI) to make modals!!-->
-
-    <img src="./assets/dangerously.png" class="cover col-lg-4" id="dangerously" @click="dangerouslyModal=true">
-
-    <img src="./assets/bday.png" class="cover col-lg-4" @click="bdayModal=true">
-
-    <img src="./assets/sashafierce.png" class="cover col-lg-4" @click="sashaFierceModal=true">
-
-    <img src="./assets/4.png" class="cover col-lg-4" @click="showModal=true">
-
-    <img src="./assets/beyonce.png" class="cover col-lg-4" @click="showModal=true">
-
-    <img src="./assets/lemonade.png" class="cover col-lg-4" @click="showModal=true">
-
-    <div class="app-footer"><a href="http://almawashington.com" target="_blank">Alma Washington.</a> 2017. Beyoncé album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>
-
-    </div> <!--COVERS-->
-
-
-    <Modal v-show="dangerouslyModal" @close="dangerouslyModal=false">
-       <Intro :albums="albums"></Intro>
-
-    </Modal>
-
-    <Modal v-show="bdayModal" @close="bdayModal=false">
-      <h1 style="color:black">{{ message }}</h1>
-    </Modal>
-
-    <Modal v-show="sashaFierceModal" @close="sashaFierceModal=false">
-      <h1 style="color:black">{{ message }}</h1>
-    </Modal>
-
-    <Modal v-show="showModal" @close="showModal=false">
-      <h1 style="color:black">{{ message }}</h1>
-    </Modal>
-
-    <MusicPlayer></MusicPlayer>
+    <AlbumCovers></AlbumCovers>
 
 </div><!--APP-->
 
@@ -52,13 +13,15 @@ import axios from 'axios'
 import Intro from './components/Intro'
 import Modal from './components/Modal'
 import MusicPlayer from './components/MusicPlayer'
+import AlbumCovers from './AlbumCovers'
 
 export default {
   name: 'app',
   components: {
     Intro,
     Modal,
-    MusicPlayer
+    MusicPlayer,
+    AlbumCovers
   },
 
   data () {
