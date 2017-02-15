@@ -13,7 +13,7 @@ import axios from 'axios'
 import Intro from './components/Intro'
 import Modal from './components/Modal'
 import MusicPlayer from './components/MusicPlayer'
-import AlbumCovers from './AlbumCovers'
+import AlbumCovers from './components/AlbumCovers'
 
 export default {
   name: 'app',
