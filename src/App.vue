@@ -1,10 +1,14 @@
 <template>
   <div id="app">
     <div class="title">BEYONCÉ</div>
-    <p id="title">info here</p>
-    <AlbumCovers></AlbumCovers>
+    <p id="title"> info here </p>
+    <AlbumCovers :albums="albums"></AlbumCovers>
 
-</div><!--APP-->
+
+    <div class="app-footer"><a href="http://almawashington.com" target="_blank">Alma Washington.</a> 2017. Beyoncé album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>
+
+    </div> <!--COVERS-->
+  </div><!--APP-->
 
 </template>
 
@@ -26,12 +30,7 @@ export default {
 
   data () {
     return {
-      albums: [],
-      dangerouslyModal: false,
-      bdayModal: false,
-      sashaFierceModal: false,
-      showModal: false,
-      message: 'Bey Album'
+      albums: []
     }
   },
 

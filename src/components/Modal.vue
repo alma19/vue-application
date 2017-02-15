@@ -1,11 +1,12 @@
 <template>
+  <!--modal component from bulma framework--> 
   <div class="Modal">
 
     <div class="modal is-active">
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Modal Title</p>
+          <p class="modal-card-title">{{album.albumName}}</p>
         </header>
         <section class="modal-card-body">
           <slot></slot>
@@ -20,13 +21,9 @@
 
 <script>
 export default {
-
-  data () {
-    return {
-
-    }
-  }
-
+  props: [
+    'album'
+  ]
 }
 </script>
 

@@ -1,21 +1,23 @@
 <template>
-  <div>
-    <div :albums="albums" class="Intro">
-       <h3>Intro Test</h3>
-       <h1></h1>
+    <div class="Intro">
+      <!--getting album overview from JSON--> 
+      <p>
+        {{album.overview}}
+      </p>
     </div>
-
-</div>
 </template>
 
 <script>
 
-
+import MusicPlayer from './MusicPlayer'
 
 export default {
   props: [
-    'albums'
-  ]
+    'album'
+  ],
+  components: {
+    MusicPlayer
+  }
 }
 </script>
 

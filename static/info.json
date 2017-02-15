@@ -1,6 +1,7 @@
 [
   {
     "albumName": "Dangerously In Love",
+    "albumCover": "/static/dangerously.png",
     "artist": "Beyoncé",
     "released": "June 24, 2003",
     "recorded": "March 2002-March 2003",
@@ -26,6 +27,7 @@
   },
   {
     "albumName": "B'Day",
+    "albumCover": "/static/bday.png",
     "artist": "Beyoncé",
     "released": "September 4, 2006",
     "recorded": "April 2006",
@@ -46,6 +48,7 @@
   },
   {
   "albumName": "I Am Sasha Fierce",
+  "albumCover": "/static/sashafierce.png",
   "artist": "Beyoncé",
   "released": "November 18, 2008",
   "recorded": "December 2007-August 2008",
@@ -69,6 +72,7 @@
   },
   {
   "albumName": "4",
+  "albumCover": "/static/4.png",
   "artist": "Beyoncé",
   "released": "June 28, 2011",
   "recorded": "2010-2011",
@@ -89,6 +93,7 @@
   },
   {
   "albumName": "Beyoncé",
+  "albumCover": "/static/beyonce.png",
   "artist": "Beyoncé",
   "released": "December 13, 2013",
   "recorded": "2012-13",
@@ -110,6 +115,7 @@
   },
   {
   "albumName": "Lemonade",
+  "albumCover": "/static/lemonade.png",
   "artist": "Beyoncé",
   "released": "April 23, 2016",
   "recorded": "2014-2015",
