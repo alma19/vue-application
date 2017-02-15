@@ -10,7 +10,7 @@
 
 <script>
 
-import MusicPlayer from './MusicPlayer'
+import MusicPlayer from './components/MusicPlayer'
 
 export default {
   props: [
