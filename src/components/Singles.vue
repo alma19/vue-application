@@ -1,7 +1,7 @@
 <template>
   <div class="Singles">
-    <p>
-    {{album.singles}}
+    <p v-for="single in album.singles">
+    {{single}}
     </p>
   </div>
 </template>
@@ -17,4 +17,5 @@ export default {
 <style scoped>
 .Singles {
 }
+
 </style>
