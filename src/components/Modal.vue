@@ -1,5 +1,5 @@
 <template>
-  <!--modal component from bulma framework--> 
+  <!--modal component from bulma framework-->
   <div class="Modal">
 
     <div class="modal is-active">
@@ -27,6 +27,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.modal-card {
+  width: 750px; 
+}
 
 </style>

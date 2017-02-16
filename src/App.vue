@@ -38,6 +38,7 @@ export default {
 
   },
 
+  // getting JSON. console log to check that JSON is coming through correctly
   mounted () {
     axios.get('/static/info.json')
     .then((response) => {

@@ -3,7 +3,7 @@
 
     <!--vue youtube embed component used https://github.com/kaorun343/vue-youtube-embed -->
 
-    <!--setting up youtube player --> 
+    <!--setting up youtube player -->
     <youtube :video-id="videoID" @ready="ready" @playing="playing" @getAlbum(album)></youtube>
 
   </div> <!--VideoPlayer-->
@@ -31,16 +31,16 @@ export default {
       this.player = player
     },
     playing (player) {
-     // The player is playing a ideo.
+     // The player is playing a video.
     },
     stop () {
-      this.player.stopVideo()
+      this.player.stopVideo()  // stop the video
     },
     pause () {
-      this.player.pauseVideo()
+      this.player.pauseVideo() // pause the video
     },
     getAlbum (album) {
-      this.activeAlbum = album
+      this.activeAlbum = album // setting album so you can loop through JSON to get the album ids
     }
   }
 
@@ -48,7 +48,9 @@ export default {
 </script>
 
 
-<style scoped>
-.VideoPlayer {
+<style>
+/*make youtube videos responsive!*/
+iframe#youtube-player-1 {
+  width: 100% !important;
 }
 </style>

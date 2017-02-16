@@ -11,9 +11,9 @@
     "overview": "Dangerously in Love is Beyoncé's debut studio album. This album marked a shift in her career, as she began to move away from Destiny's Child and establish herself as a solo artist. Beyoncé also worked to establish herself as more than just as singer on this album, as she is credited as a co-writer, co-producer, and executive producer. This album contains a variety of mid-tempo and ballad songs that fit into the R&B and soul genre. Though Beyoncé had a hard time gaining support from record executives for this album, it became a huge success, commercially and critically. This is the album that set Beyoncé on the path to becoming the dominating force in the music industry that she is today.",
     "singles": {
       "single1":"Crazy in Love",
-      "single2":"Baby Boy",
-      "single3":"Me, Myself and I",
-      "single4":"Naughty Girl"
+      "single2": "Baby Boy",
+      "single3": "Me, Myself and I",
+      "single4": "Naughty Girl"
     },
     "extras": {
       "extra1":"Dangerously in Love debuted as number one on the US Billdobard 200 chart",
@@ -149,7 +149,7 @@
   {
   "albumName": "Lemonade",
   "albumCover": "/static/lemonade.png",
-  "video": "WDZJPJV__bQ", 
+  "video": "WDZJPJV__bQ",
   "artist": "Beyoncé",
   "released": "April 23, 2016",
   "recorded": "2014-2015",
