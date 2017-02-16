@@ -3,7 +3,8 @@
 
     <!--vue youtube embed component used https://github.com/kaorun343/vue-youtube-embed -->
 
-    <youtube :video-id="videoID" @ready="ready" @playing="playing"></youtube>
+    <!--setting up youtube player --> 
+    <youtube :video-id="videoID" @ready="ready" @playing="playing" @getAlbum(album)></youtube>
 
   </div> <!--VideoPlayer-->
 </template>
@@ -17,11 +18,12 @@ Vue.use(VueYoutubeEmbed)
 
 export default {
   props: [
-    'albums'
+    'album'
   ],
   data () {
     return {
-      videoID: 'ViwtNLUqkMY'
+      // getting video id from JSON
+      videoID: this.album.video
     }
   },
   methods: {
@@ -29,19 +31,22 @@ export default {
       this.player = player
     },
     playing (player) {
-      // The player is playing a video.
+     // The player is playing a ideo.
     },
     stop () {
       this.player.stopVideo()
     },
     pause () {
       this.player.pauseVideo()
+    },
+    getAlbum (album) {
+      this.activeAlbum = album
     }
-
   }
 
 }
 </script>
+
 
 <style scoped>
 .VideoPlayer {

@@ -13,7 +13,7 @@
         <Modal v-if="showModal" @close="showModal=false" :album="activeAlbum">
           <Intro :album="activeAlbum"></Intro>
           <MusicPlayer :album="activeAlbum"></MusicPlayer>
-          <VideoPlayer></VideoPlayer>
+          <VideoPlayer :album="activeAlbum"></VideoPlayer>
         </Modal>
 
         <div class="app-footer"><a href="http://almawashington.com" target="_blank">Alma Washington.</a> 2017. Beyoncé album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>

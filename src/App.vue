@@ -2,7 +2,6 @@
   <div id="app">
     <div class="title">BEYONCÉ</div>
     <p id="title"> info here </p>
-    <VideoPlayer></VideoPlayer>
     <AlbumCovers :albums="albums"></AlbumCovers>
 
 
