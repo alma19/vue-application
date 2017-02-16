@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h2>MusicPlayer Test</h2>
-   <!-- <iframe :src="this.albums[0].link.href" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
+  <div class="MusicPlayer">
+
+    <!--calling spotify playlist from the JSON file-->
+    <iframe :src="album.link.href" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
   </div>
 </template>
 
@@ -9,7 +10,7 @@
 
 export default {
   props: [
-    'albums'
+    'album'
   ]
 }
 </script>

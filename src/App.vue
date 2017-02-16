@@ -2,12 +2,11 @@
   <div id="app">
     <div class="title">BEYONCÉ</div>
     <p id="title"> info here </p>
+    <VideoPlayer></VideoPlayer>
     <AlbumCovers :albums="albums"></AlbumCovers>
 
 
-    <div class="app-footer"><a href="http://almawashington.com" target="_blank">Alma Washington.</a> 2017. Beyoncé album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>
 
-    </div> <!--COVERS-->
   </div><!--APP-->
 
 </template>
@@ -18,6 +17,7 @@ import Intro from './components/Intro'
 import Modal from './components/Modal'
 import MusicPlayer from './components/MusicPlayer'
 import AlbumCovers from './components/AlbumCovers'
+import VideoPlayer from './components/VideoPlayer'
 
 export default {
   name: 'app',
@@ -25,7 +25,8 @@ export default {
     Intro,
     Modal,
     MusicPlayer,
-    AlbumCovers
+    AlbumCovers,
+    VideoPlayer
   },
 
   data () {
