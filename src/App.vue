@@ -4,8 +4,6 @@
     <p id="title"> info here </p>
     <AlbumCovers :albums="albums"></AlbumCovers>
 
-
-
   </div><!--APP-->
 
 </template>
@@ -96,5 +94,10 @@ a {
 
 a:hover {
   color: white;
+}
+
+p {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.1em;
 }
 </style>

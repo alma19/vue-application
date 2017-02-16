@@ -1,6 +1,6 @@
 <template>
-  <div class="Singles">
-    <p v-for="single in album.singles">
+  <div class="Singles col-lg-6 col-sm-12">
+    <p class="inner-singles" v-for="single in album.singles">
     {{single}}
     </p>
   </div>
@@ -16,6 +16,11 @@ export default {
 
 <style scoped>
 .Singles {
+  margin-top: 10px;
+}
+
+.inner-singles {
+  padding: 5px; 
 }
 
 </style>

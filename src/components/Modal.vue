@@ -29,7 +29,21 @@ export default {
 
 <style>
 .modal-card {
-  width: 750px; 
+  width: 750px;
+}
+
+.modal-card-title {
+  font-family: 'Oswald', sans-serif;
+  color: black;
+  font-size: 1.7em;
+}
+.modal-card-foot, .modal-card-head {
+  background-color: #D8AEC8;
+}
+
+.modal-close {
+  margin-right: 25px;
+  margin-top: 10px;
 }
 
 </style>

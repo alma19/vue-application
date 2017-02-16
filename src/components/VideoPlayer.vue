@@ -50,7 +50,7 @@ export default {
 
 <style>
 /*make youtube videos responsive!*/
-iframe#youtube-player-1 {
+iframe {
   width: 100% !important;
 }
 </style>

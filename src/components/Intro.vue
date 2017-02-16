@@ -1,9 +1,10 @@
 <template>
     <div class="Intro">
-      <!--getting album overview from JSON--> 
+      <!--getting album overview from JSON-->
       <p>
         {{album.overview}}
       </p>
+      <hr />
     </div>
 </template>
 
@@ -23,5 +24,13 @@ export default {
 
 <style scoped>
 .Intro {
+  padding: 10px;
+}
+p {
+  text-align: left;
+}
+
+hr {
+  background-color: black; 
 }
 </style>
