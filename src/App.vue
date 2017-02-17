@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="title">BEYONCÉ</div>
-    <p id="title"> info here </p>
+    <p id="title"> The purpose of this site is to provide an interactive look into Beyoncé's illustrious discography and music career. Click on an album to get the full Beyoncé experience. </p>
     <AlbumCovers :albums="albums"></AlbumCovers>
 
   </div><!--APP-->

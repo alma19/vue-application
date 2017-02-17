@@ -15,6 +15,7 @@
           <Intro :album="activeAlbum"></Intro>
           <VideoPlayer :album="activeAlbum"></VideoPlayer>
           <Singles :album="activeAlbum"></Singles>
+          <div class="col-lg-2"></div>
           <Stats :album="activeAlbum"></Stats>
           <MusicPlayer :album="activeAlbum"></MusicPlayer>
         </Modal>

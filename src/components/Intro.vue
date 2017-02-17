@@ -31,6 +31,6 @@ p {
 }
 
 hr {
-  background-color: black; 
+  background-color: #808080;
 }
 </style>

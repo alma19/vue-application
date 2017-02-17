@@ -42,7 +42,7 @@ export default {
 }
 
 .modal-close {
-  margin-right: 25px;
+  margin-right: 30px;
   margin-top: 10px;
 }
 
