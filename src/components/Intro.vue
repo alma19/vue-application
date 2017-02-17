@@ -6,7 +6,7 @@
         <li><p><b>Released: </b>{{album.released}}</p> </li>
         <li><p><b>Genre: </b>{{album.genre}}</p> </li>
         <li><p><b>Label: </b>{{album.label}}</p> </li>
-        <li><p><b>Worldwide Sales: </b>{{album.sales}}</p> </li>
+        <li><p><b>Sales: </b>{{album.sales}}</p> </li>
       </ul>
 
       <p class="intro-title">

@@ -1,6 +1,8 @@
 <template>
   <div class="MusicPlayer">
-    {{album.disclaimer}}
+    <p>
+      {{album.disclaimer}}
+    </p>
     <!--calling spotify playlist from the JSON file-->
     <iframe :src="album.link.href" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 
@@ -18,6 +20,6 @@ export default {
 
 <style scoped>
 .MusicPlayer {
-  text-align: left; 
+  text-align: left;
 }
 </style>
