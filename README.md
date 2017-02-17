@@ -1,6 +1,10 @@
-# mejo583p1
+# Beyoncé Discography Profile
 
 > A Vue.js project
+
+This project was created for MEJO 583: Advanced Multimedia Programming, at UNC Chapel Hill's School of Media and Journalism. Our assignment was to create a single page Vue.js application with at least 5 reusable components.
+
+[My portfolio.](http://almawashington.com)
 
 ## Build Setup
 
