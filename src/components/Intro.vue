@@ -1,7 +1,18 @@
 <template>
     <div class="Intro">
       <!--getting album overview from JSON-->
-      <p>
+      <ul>
+        <li><p><b>Recorded: </b>{{album.recorded}}</p> </li>
+        <li><p><b>Released: </b>{{album.released}}</p> </li>
+        <li><p><b>Genre: </b>{{album.genre}}</p> </li>
+        <li><p><b>Label: </b>{{album.label}}</p> </li>
+        <li><p><b>Worldwide Sales: </b>{{album.sales}}</p> </li>
+      </ul>
+
+      <p class="intro-title">
+        Background
+      </p>
+      <p class="intro-text">
         {{album.overview}}
       </p>
       <hr />
@@ -32,5 +43,10 @@ p {
 
 hr {
   background-color: #808080;
+}
+
+.intro-title {
+  margin-top: 10px;
+  font-weight: bold;
 }
 </style>

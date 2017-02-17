@@ -20,7 +20,7 @@
           <MusicPlayer :album="activeAlbum"></MusicPlayer>
         </Modal>
 
-        <div class="app-footer"><a href="http://almawashington.com" target="_blank">Alma Washington.</a> 2017. Beyoncé album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>
+        <div class="app-footer">Alma Washington. 2017. <a href="http://almawashington.com" target="_blank">Portfolio.</a> <a href="http://github.com/alma19" target="_blank">GitHub.</a> Album information & photos obtained from  <a href="https://en.wikipedia.org/wiki/Beyonc%C3%A9_discography" target="_blank">Wikipedia.</a></div>
 
 
 
