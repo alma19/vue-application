@@ -56,7 +56,8 @@ export default {
     }
   },
   methods: {
-    // setting activeAlbum so you can loop through JSON, showModal is false so it doesn't automatically pop up
+    // setting activeAlbum so you can loop through JSON
+    // showModal - allows Modal to show when album cover is clicked on
     add: function (album) {
       this.activeAlbum = album
       this.showModal = true

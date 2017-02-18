@@ -36,13 +36,11 @@ export default {
 
   },
 
-  // getting JSON. console log to check that JSON is coming through correctly
+  // getting JSON.
   mounted () {
     axios.get('/static/info.json')
     .then((response) => {
       this.albums = response.data
-      console.log(this.albums[0].albumName)
-      console.log(this.albums[0].link.href)
     })
   }
 
@@ -54,7 +52,6 @@ body {
   background-color: black;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

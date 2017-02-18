@@ -21,15 +21,10 @@
 
 <script>
 
-import MusicPlayer from './MusicPlayer'
-
 export default {
   props: [
     'album'
-  ],
-  components: {
-    MusicPlayer
-  }
+  ]
 }
 </script>
 
