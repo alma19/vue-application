@@ -6,6 +6,8 @@ A look into Beyoncé's illustrious discography using Vue.js and WebPack.
 
 [My portfolio.](http://almawashington.com)
 
+![alt text](https://github.com/alma19/vue-application/blob/master/vuejs.png?raw=true)
+
 ## Build Setup
 
 ``` bash
